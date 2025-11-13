@@ -1,0 +1,31 @@
+/*
+const navecita = new NaveCombate(velocidad=10, direccion=0)
+navecita.emitirMensaje("Hola")
+navecita.emitirMensaje("Achu")
+navecita.emitirMensaje("Papanatas")
+navecita.emitirMensaje("Buenos dias")
+navecita.emitirMensaje("Para entender la historia de Five Nights at Freddys")
+navecita.emitirMensaje("Navidad")
+
+navecita.mensajesEmitidos()
+navecita.ultimoMensajeEmitido()
+navecita.primerMensajeEmitido()
+navecita.esEscueta()
+
+*/
+
+/*
+const navecita = new NaveBaliza(velocidad=10, direccion=0)
+navecita.cambiarColorDeBaliza(azul)
+navecita.balizaColor()
+*/
+
+/*
+const navecita = new Nave(velocidad = 10, direccion = 0)
+navecita.acelerar(5000000)
+navecita.velocidad()
+navecita.desacelerar(-6)
+navecita.velocidad()
+navecita.acercarseUnPocoAlSol()
+navecita.direccion()
+*/
