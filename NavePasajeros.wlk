@@ -30,6 +30,7 @@ class NavePasajeros inherits Nave{
         super()
         self.cargarComida(4)
         self.cargarBebida(6)
+        self.acercarseUnPocoAlSol()
     }
 
     //Reacción ante amenazas

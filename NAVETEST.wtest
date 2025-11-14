@@ -1,31 +1,30 @@
-/*
-const navecita = new NaveCombate(velocidad=10, direccion=0)
-navecita.emitirMensaje("Hola")
-navecita.emitirMensaje("Achu")
-navecita.emitirMensaje("Papanatas")
-navecita.emitirMensaje("Buenos dias")
-navecita.emitirMensaje("Para entender la historia de Five Nights at Freddys")
-navecita.emitirMensaje("Navidad")
+import NAVE.*
+import NaveCombate.*
+import NavePasajeros.*
+import NaveBaliza.*
 
-navecita.mensajesEmitidos()
-navecita.ultimoMensajeEmitido()
-navecita.primerMensajeEmitido()
-navecita.esEscueta()
 
-*/
 
-/*
-const navecita = new NaveBaliza(velocidad=10, direccion=0)
-navecita.cambiarColorDeBaliza(azul)
-navecita.balizaColor()
-*/
 
-/*
-const navecita = new Nave(velocidad = 10, direccion = 0)
-navecita.acelerar(5000000)
-navecita.velocidad()
-navecita.desacelerar(-6)
-navecita.velocidad()
-navecita.acercarseUnPocoAlSol()
-navecita.direccion()
-*/
+
+
+describe "TESTS DE PREPARACIÓN DE VIAJE"{
+    test "Naves-baliza"{
+        const asesino = new NaveBaliza(velocidad=30, direccion=5, combustible=54)
+        asesino.prepararViaje()
+        assert.equals("verde", asesino.balizaColor())
+        assert.equals(0, asesino.direccion())
+        assert.equals(30054, asesino.combustible())
+        assert.equals(5030, asesino.velocidad())
+    }
+
+    test "Naves de pasajeros"{
+        const comes = new NavePasajeros(velocidad=23, direccion=9, combustible=64, pasajeros=5)
+        comes.prepararViaje()
+        assert.equals(20, comes.comida())
+        assert.equals(30, comes.bebida())
+        assert.equals(10, comes.direccion())
+        assert.equals(30064, comes.combustible())
+        assert.equals(5023, comes.velocidad())
+    }
+}
