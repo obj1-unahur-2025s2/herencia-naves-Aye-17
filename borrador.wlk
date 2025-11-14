@@ -30,6 +30,9 @@ navecita.acercarseUnPocoAlSol()
 navecita.direccion()
 */
 
+object cosa{
+    
+}
 
 
 
